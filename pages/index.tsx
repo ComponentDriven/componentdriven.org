@@ -5,7 +5,6 @@ export default function Home() {
     <div>
       <Head>
         <title>Component Driven</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
