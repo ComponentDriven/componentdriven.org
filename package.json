@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@storybook/design-system": "^5.1.5",
@@ -14,8 +16,15 @@
     "react-dom": "16.13.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@next/plugin-storybook": "^9.5.0",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/react": "^5.3.19",
     "@types/node": "^14.0.26",
     "@types/react": "^16.9.43",
+    "babel-loader": "^8.1.0",
     "typescript": "^3.9.7"
   }
 }
