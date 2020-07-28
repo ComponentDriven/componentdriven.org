@@ -13,7 +13,9 @@
     "@storybook/design-system": "^5.1.5",
     "next": "9.5.0",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-github-button": "^0.1.11",
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
