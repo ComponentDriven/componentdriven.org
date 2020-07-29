@@ -1,3 +1,7 @@
+# componentdriven.org
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1d7bee5d-9fc5-4583-9bc6-383166fa8c3f/deploy-status)](https://app.netlify.com/sites/lucid-clarke-d8746f/deploys)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

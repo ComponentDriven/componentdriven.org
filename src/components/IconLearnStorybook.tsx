@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 export const IconLearnStorybook = (props) => (
-  <svg viewBox="0 0 80 80" {...props}>
+  <svg viewBox="0 0 80 80" width="32" height="32" {...props}>
     <g fill="none" fillRule="evenodd">
       <path
         d="M26.5 62.5a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm0-4.8a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4z"
