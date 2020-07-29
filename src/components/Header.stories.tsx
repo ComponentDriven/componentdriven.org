@@ -3,7 +3,7 @@ import { Header } from './Header';
 
 export default {
   component: Header,
-  title: 'Components/Header',
+  title: 'Sections/Header',
 };
 
 export const Default = () => <Header />;

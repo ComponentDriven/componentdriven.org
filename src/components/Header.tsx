@@ -3,25 +3,16 @@ import styled from 'styled-components';
 import { styles } from '@storybook/design-system';
 import { Navbar } from './Navbar';
 import { Backdrop } from './Backdrop';
+import { Heading } from './Heading';
 import { ComponentDrivenIllustration } from './ComponentDrivenIllustration';
 import { measure } from '../styles';
+import { Stack, StackProps } from './Stack';
 
 const { typography, color, breakpoint, pageMargins } = styles;
 
-const HeaderTitle = styled.h1`
-  font-size: ${typography.size.l1}px;
-  line-height: 1.25;
-  letter-spacing: -0.61px;
-  font-weight: ${typography.weight.extrabold};
+const HeaderTitle = styled(Heading).attrs({ level: '1' })`
   color: ${color.lightest};
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 20px;
-
-  @media (min-width: ${breakpoint}px) {
-    font-size: ${typography.size.l3}px;
-    letter-spacing: -0.61px;
-  }
 `;
 
 const HeaderCopy = styled.p`
@@ -38,7 +29,10 @@ const HeaderCopy = styled.p`
   }
 `;
 
-const HeaderContainer = styled.div`
+const HeaderContainer = styled(Stack).attrs<StackProps>({
+  axis: 'vertical',
+  space: '64px',
+})`
   ${pageMargins}
   padding-bottom: 64px;
   padding-top: 32px;
@@ -50,7 +44,8 @@ const HeaderContainer = styled.div`
 `;
 
 const HeaderIllustration = styled(ComponentDrivenIllustration)`
-  margin: 64px auto;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   width: 100%;
   max-width: ${measure}px;
@@ -72,12 +67,14 @@ export const Header = () => (
         }}
       />
       <HeaderIllustration />
-      <HeaderTitle>Component Driven User Interfaces</HeaderTitle>
-      <HeaderCopy>
-        The development and design practice of building user interfaces with
-        modular components. UIs are built from the “bottom up” starting with
-        basic components then progressively combined to assemble screens.
-      </HeaderCopy>
+      <Stack axis="vertical" space="medium">
+        <HeaderTitle as="h1">Component Driven User Interfaces</HeaderTitle>
+        <HeaderCopy>
+          The development and design practice of building user interfaces with
+          modular components. UIs are built from the “bottom up” starting with
+          basic components then progressively combined to assemble screens.
+        </HeaderCopy>
+      </Stack>
     </HeaderContainer>
   </Backdrop>
 );
