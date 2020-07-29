@@ -4,6 +4,7 @@ import {
   global as designSystemGlobal,
   loadFontsForStorybook,
 } from '@storybook/design-system';
+import '!style-loader!css-loader!react-github-button/assets/style.css';
 
 const { GlobalStyle } = designSystemGlobal;
 

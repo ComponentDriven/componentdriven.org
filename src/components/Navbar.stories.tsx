@@ -1,5 +1,4 @@
 import React from 'react';
-import '!style-loader!css-loader!react-github-button/assets/style.css';
 import { Navbar } from './Navbar';
 import { Backdrop } from './Backdrop';
 

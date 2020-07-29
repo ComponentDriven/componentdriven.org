@@ -62,7 +62,7 @@ const NavGroup = ({ links }: NavGroupProps) => (
   <nav>
     <Stack space={25} align="center">
       {links.map((link) => (
-        <NavLink tertiary href={link.href}>
+        <NavLink tertiary key={link.title} href={link.href}>
           {link.title}
         </NavLink>
       ))}
@@ -74,19 +74,27 @@ const NavWrapper = styled.div`
   ${pageMargins}
 `;
 
-type NavbarProps = {
+const NavItem = styled.div`
+  min-width: 82px;
+`;
+
+export type NavbarProps = {
   links: link[];
   githubLink: { namespace: string; repo: string };
 };
 
 export const Navbar = ({ links, githubLink }: NavbarProps) => (
   <Stack space="evenly" alignment="center">
-    <Logo />
+    <NavItem>
+      <Logo />
+    </NavItem>
     <NavGroup links={links} />
-    <GitHubLink
-      type="stargazers"
-      namespace={githubLink.namespace}
-      repo={githubLink.repo}
-    />
+    <NavItem>
+      <GitHubLink
+        type="stargazers"
+        namespace={githubLink.namespace}
+        repo={githubLink.repo}
+      />
+    </NavItem>
   </Stack>
 );

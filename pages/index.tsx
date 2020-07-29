@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Header } from '../src/components/Header';
 
 export default function Home() {
   return (
@@ -7,9 +8,7 @@ export default function Home() {
         <title>Component Driven</title>
       </Head>
 
-      <main>
-        <h1>Component Driven User Interfaces</h1>
-      </main>
+      <Header />
     </div>
   );
 }

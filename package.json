@@ -15,7 +15,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-github-button": "^0.1.11",
-    "styled-components": "^5.1.1"
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",

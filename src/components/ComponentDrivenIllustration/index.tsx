@@ -1,0 +1,1 @@
+export { ComponentDrivenIllustration } from './ComponentDrivenIllustration';
