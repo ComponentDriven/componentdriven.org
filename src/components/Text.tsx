@@ -3,11 +3,11 @@ import { styles } from '@storybook/design-system';
 
 const { color, typography } = styles;
 
-export const SubHeading = styled.h3`
-  letter-spacing: 5.57px;
-  text-transform: uppercase;
-  font-weight: ${typography.weight.extrabold};
+export const Text = styled.p`
+  letter-spacing: -0.33px;
   font-size: ${typography.size.s3}px;
-  line-height: 22px;
+  line-height: ${typography.size.m3}px;
   color: ${color.darkest};
+  margin-top: 0;
+  margin-bottom: 0;
 `;
