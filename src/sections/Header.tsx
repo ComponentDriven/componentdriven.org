@@ -18,7 +18,7 @@ const HeaderTitle = styled(Heading).attrs({ level: '1' })`
 const HeaderCopy = styled.p`
   font-size: ${typography.size.s3}px;
   line-height: 1.5;
-  max-width: ${measure}px;
+  max-width: ${measure.regular}px;
   color: ${color.lightest};
   margin: 0 auto;
 
@@ -48,7 +48,7 @@ const HeaderIllustration = styled(ComponentDrivenIllustration)`
   margin-right: auto;
   display: block;
   width: 100%;
-  max-width: ${measure}px;
+  max-width: ${measure.regular}px;
 `;
 
 export const Header = () => (

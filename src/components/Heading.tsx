@@ -40,6 +40,7 @@ export const Heading = styled.h1`
       line-height: ${typography.size.l1}px;
       letter-spacing: -0.28px;
       font-weight: ${typography.weight.black};
+      margin-bottom: 8px;
     `};
 
   ${(props) =>
