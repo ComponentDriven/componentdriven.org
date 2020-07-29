@@ -1,12 +1,12 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { styles } from '@storybook/design-system';
-import { Navbar } from './Navbar';
-import { Backdrop } from './Backdrop';
-import { Heading } from './Heading';
-import { ComponentDrivenIllustration } from './ComponentDrivenIllustration';
+import { Navbar } from '../components/Navbar';
+import { Backdrop } from '../components/Backdrop';
+import { Heading } from '../components/Heading';
+import { ComponentDrivenIllustration } from '../components/ComponentDrivenIllustration';
 import { measure } from '../styles';
-import { Stack, StackProps } from './Stack';
+import { Stack, StackProps } from '../components/Stack';
 
 const { typography, color, breakpoint, pageMargins } = styles;
 
