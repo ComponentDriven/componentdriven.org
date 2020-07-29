@@ -4,13 +4,12 @@ import { Why } from '../src/sections/Why';
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Component Driven</title>
       </Head>
-
       <Header />
       <Why />
-    </div>
+    </>
   );
 }

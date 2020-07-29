@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import GitHubButton from 'react-github-button';
 import { styles, Link } from '@storybook/design-system';
-import { IconLearnStorybook } from './IconLearnStorybook';
+import IconLearnStorybook from '../images/icon-learn-storybook.svg';
 import { Stack } from './Stack';
 
-const { color, pageMargins, typography, breakpoint } = styles;
+const { color, pageMargins, typography } = styles;
 
 const Logo = styled(IconLearnStorybook)`
   && {
