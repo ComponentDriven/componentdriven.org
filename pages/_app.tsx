@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { global } from '@storybook/design-system';
 import 'react-github-button/assets/style.css';
+import '../styles/globals.css';
 
 const { GlobalStyle, fontUrl } = global;
 
