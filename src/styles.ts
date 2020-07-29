@@ -1,3 +1,6 @@
-export const measure = 600;
+export const measure = { regular: 600, wide: 760 };
 
-export const space = [4, 8, 16, 32, 64];
+export const margin = {
+  small: 40,
+  large: 80
+};

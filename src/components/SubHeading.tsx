@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { styles } from '@storybook/design-system';
 
 const { color, typography } = styles;
