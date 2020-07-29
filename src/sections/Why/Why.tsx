@@ -9,14 +9,14 @@ import { WhatAreComponents } from './WhatAreComponents';
 
 const { pageMargins } = styles;
 
-const WhyContainer = styled.div`
+const WhyContainer = styled.section`
   ${pageMargins}
   padding-bottom: ${margin.large}px;
   padding-top: ${margin.large}px;
 `;
 
 export const Why = () => (
-  <WhyContainer>
+  <WhyContainer id="why">
     <Stack axis="vertical" space="40px">
       <WhyComponents />
       <History />
