@@ -17,10 +17,8 @@ const WhyContainer = styled.section`
 
 export const Why = () => (
   <WhyContainer id="why">
-    <Stack axis="vertical" space="40px">
-      <WhyComponents />
-      <History />
-      <WhatAreComponents />
-    </Stack>
+    <WhyComponents />
+    <History />
+    <WhatAreComponents />
   </WhyContainer>
 );
