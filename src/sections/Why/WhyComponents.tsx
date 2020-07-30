@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Stack } from '../../components/Stack';
 import { Heading } from '../../components/Heading';
 import { Text } from '../../components/Text';
