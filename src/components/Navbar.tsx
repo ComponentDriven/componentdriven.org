@@ -60,7 +60,7 @@ type NavGroupProps = {
 
 const NavGroup = ({ links }: NavGroupProps) => (
   <nav>
-    <Stack space={25} align="center">
+    <Stack space={25} alignment="center">
       {links.map((link) => (
         <NavLink tertiary key={link.title} href={link.href}>
           {link.title}

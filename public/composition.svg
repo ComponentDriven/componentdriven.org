@@ -1,0 +1,27 @@
+<svg width="240" height="154" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <filter x="-45.7%" y="-73.1%" width="191.3%" height="271.2%" filterUnits="objectBoundingBox" id="a">
+      <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0.847967618 0 0 0 0 0.0879152402 0 0 0 0 0.344019846 0 0 0 0.1 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter x="-23.4%" y="-31.8%" width="146.8%" height="189.1%" filterUnits="objectBoundingBox" id="b">
+      <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+    </filter>
+    <linearGradient x1="37.741%" y1="36.23%" x2="41.16%" y2="63.77%" id="d">
+      <stop stop-color="#F91E8C" offset="0%"/>
+      <stop stop-color="#FE1EF7" offset="100%"/>
+    </linearGradient>
+    <path d="M24.578 32.013L49.914 47.83l23.92-14.956.276-.172 10.265 6.414 39.68 24.771-24.578 15.407-25.338-15.82-23.378 14.618-.816.512-11.696-7.308L0 47.419l24.578-15.406zM74.105.773l75.52 47.177-24.578 15.407L74.105 31.52l-24.16 15.15-24.633-15.39L74.106.771z" id="c"/>
+  </defs>
+  <g filter="url(#a)" transform="translate(45 37)" fill="none" fill-rule="evenodd">
+    <use fill="#000" filter="url(#b)" xlink:href="#c"/>
+    <use fill="url(#d)" xlink:href="#c"/>
+  </g>
+</svg>

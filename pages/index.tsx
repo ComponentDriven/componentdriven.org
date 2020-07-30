@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { Header } from '../src/sections/Header';
 import { Why } from '../src/sections/Why';
+import { How } from '../src/sections/How';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       </Head>
       <Header />
       <Why />
+      <How />
     </>
   );
 }

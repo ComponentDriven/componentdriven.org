@@ -5,7 +5,7 @@ import { margin } from '../styles';
 
 const { background, spacing, breakpoint } = styles;
 
-export const Callout = styled<TextProps>(Text)`
+export const Callout = styled(Text)<TextProps>`
   background-color: ${background.app};
   padding: ${spacing.padding.large}px;
   color: #586368;

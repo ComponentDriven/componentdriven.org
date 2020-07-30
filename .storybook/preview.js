@@ -1,5 +1,5 @@
 import React from 'react';
-import { addDecorator } from '@storybook/react';
+import { addDecorator, addParameters } from '@storybook/react';
 import {
   global as designSystemGlobal,
   loadFontsForStorybook,
@@ -18,3 +18,9 @@ const withGlobalStyle = (storyFn) => (
 addDecorator(withGlobalStyle);
 
 loadFontsForStorybook();
+
+addParameters({
+  options: {
+    showRoots: true,
+  },
+});

@@ -3,11 +3,11 @@ import { styles } from '@storybook/design-system';
 
 const { color, typography, breakpoint } = styles;
 
-type HeadingProps = {
-  level: '1' | '2' | '3';
+export type HeadingProps = {
+  level: '1' | '2' | '3' | '4';
 };
 
-export const Heading = styled.h1`
+export const Heading = styled.h1<HeadingProps>`
   color: ${color.darkest};
 
   ${(props) =>
@@ -16,7 +16,7 @@ export const Heading = styled.h1`
       font-size: ${typography.size.l1}px;
       line-height: 1.25;
       letter-spacing: -0.61px;
-      font-weight: ${typography.weight.extrabold};
+      font-weight: ${typography.weight.black};
 
       @media (min-width: ${breakpoint}px) {
         font-size: ${typography.size.l3}px;
