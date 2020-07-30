@@ -9,7 +9,7 @@ import { margin } from '../../styles';
 
 const { breakpoint } = styles;
 
-const WhatAreComponentsContainer = styled<MeasureProps>(Measure)`
+const WhatAreComponentsContainer = styled(Measure)<MeasureProps>`
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -43,7 +43,9 @@ export const WhatAreComponents = () => (
   <WhatAreComponentsContainer variant="regular">
     <Histogram />
     <div>
-      <Heading level="4">What are components?</Heading>
+      <Heading level="4" as="h3">
+        What are components?
+      </Heading>
       <Text>
         Components are standardized, interchangeable building blocks of UIs.
         They encapsulate the appearance and function of UI pieces. Think LEGO

@@ -5,7 +5,7 @@ export type MeasureProps = {
   variant: 'regular' | 'wide';
 };
 
-export const Measure = styled.div`
+export const Measure = styled.div<MeasureProps>`
   max-width: ${(props) => measure[props.variant]}px;
   margin-left: auto;
   margin-right: auto;

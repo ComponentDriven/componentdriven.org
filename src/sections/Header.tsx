@@ -29,10 +29,10 @@ const HeaderCopy = styled.p`
   }
 `;
 
-const HeaderContainer = styled(Stack).attrs<StackProps>({
+const HeaderContainer = styled(Stack).attrs({
   axis: 'vertical',
   space: '64px',
-})`
+})<StackProps>`
   ${pageMargins}
   padding-bottom: 64px;
   padding-top: 32px;
