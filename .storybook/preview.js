@@ -5,11 +5,13 @@ import {
   loadFontsForStorybook,
 } from '@storybook/design-system';
 import '!style-loader!css-loader!react-github-button/assets/style.css';
+import { GlobalStyle } from '../src/styles';
 
-const { GlobalStyle } = designSystemGlobal;
+const { GlobalStyle: StorybookDSGlobalStyle } = designSystemGlobal;
 
 const withGlobalStyle = (storyFn) => (
   <>
+    <StorybookDSGlobalStyle />
     <GlobalStyle />
     {storyFn()}
   </>

@@ -1,9 +1,10 @@
 import Head from 'next/head';
 import { global } from '@storybook/design-system';
 import 'react-github-button/assets/style.css';
-import '../styles/globals.css';
 
-const { GlobalStyle, fontUrl } = global;
+import { GlobalStyle } from '../src/styles';
+
+const { GlobalStyle: StorybookDSGlobalStyle, fontUrl } = global;
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -18,6 +19,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
         <link href={fontUrl} rel="stylesheet" />
       </Head>
+      <StorybookDSGlobalStyle />
       <GlobalStyle />
       <Component {...pageProps} />
     </>

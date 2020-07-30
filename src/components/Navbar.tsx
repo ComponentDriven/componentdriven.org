@@ -89,7 +89,7 @@ export const Navbar = ({ links, githubLink }: NavbarProps) => (
       <Logo />
     </NavItem>
     <NavGroup links={links} />
-    <NavItem>
+    <NavItem data-chromatic="ignore">
       <GitHubLink
         type="stargazers"
         namespace={githubLink.namespace}
