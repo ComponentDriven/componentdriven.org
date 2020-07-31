@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import { styles } from '@storybook/design-system';
-const { spacing } = styles;
+import { margin } from '../styles';
 
 type alignment = 'start' | 'end' | 'center';
 
@@ -9,7 +8,7 @@ const getAlignment = (value: alignment) =>
 
 export type StackProps = {
   axis?: 'horizontal' | 'vertical';
-  space?: 'small' | 'medium' | 'large' | 'evenly' | number | string;
+  space?: keyof typeof margin | number | string;
   alignment?: alignment;
   distribution?: alignment;
 };
@@ -25,26 +24,27 @@ export const Stack = styled.div<StackProps>`
   }};
   align-items: ${(props) => getAlignment(props.alignment)};
 
-  > * {
-    ${(props) => {
-      const space = spacing.padding[props.space]
-        ? spacing.padding[props.space]
-        : props.space;
+  /* higher specificity to target component level margin values */
+  && {
+    > * {
+      ${(props) => {
+        const space = margin[props.space] ? margin[props.space] : props.space;
 
-      return space === 'evenly'
-        ? {}
-        : {
-            [props.axis === 'horizontal'
-              ? 'marginRight'
-              : 'marginBottom']: space,
-          };
-    }}
-  }
+        return space === 'evenly'
+          ? {}
+          : {
+              [props.axis === 'horizontal'
+                ? 'marginRight'
+                : 'marginBottom']: space,
+            };
+      }}
+    }
 
-  > *:last-child {
-    ${(props) => ({
-      [props.axis === 'horizontal' ? 'marginRight' : 'marginBottom']: 0,
-    })}
+    > *:last-child {
+      ${(props) => ({
+        [props.axis === 'horizontal' ? 'marginRight' : 'marginBottom']: 0,
+      })}
+    }
   }
 `;
 

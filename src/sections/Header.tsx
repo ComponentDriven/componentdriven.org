@@ -31,7 +31,7 @@ const HeaderCopy = styled.p`
 
 const HeaderContainer = styled(Stack).attrs({
   axis: 'vertical',
-  space: '64px',
+  space: 'medium',
 })<StackProps>`
   ${pageMargins}
   padding-bottom: 64px;
@@ -67,7 +67,7 @@ export const Header = () => (
         }}
       />
       <HeaderIllustration />
-      <Stack axis="vertical" space="medium">
+      <Stack axis="vertical" space="xsmall">
         <HeaderTitle as="h1">Component Driven User Interfaces</HeaderTitle>
         <HeaderCopy>
           The development and design practice of building user interfaces with

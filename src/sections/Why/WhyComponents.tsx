@@ -9,7 +9,7 @@ export const WhyComponents = () => (
     <Heading level="3" as="h2">
       Why components?
     </Heading>
-    <Stack axis="vertical" space="medium">
+    <Stack axis="vertical" space="xsmall">
       <Text>
         Modern user interfaces are more complicated than ever. Customers expect
         compelling, personalized experiences delivered across devices and
