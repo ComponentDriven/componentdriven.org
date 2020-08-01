@@ -4,6 +4,7 @@ import { Why } from '../src/sections/Why';
 import { How } from '../src/sections/How';
 import { Benefits } from '../src/sections/Benefits';
 import { Divider } from '../src/components/Divider';
+import { Tools } from '../src/sections/Tools/Tools';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <How />
       <Benefits />
       <Divider />
+      <Tools />
     </>
   );
 }

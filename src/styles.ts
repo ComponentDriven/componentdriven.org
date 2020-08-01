@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const measure = { regular: 600, wide: 760 };
+export const measure = { regular: 600, wide: 760, xwide: 980 };
 
 export const margin = {
   xxsmall: 10,

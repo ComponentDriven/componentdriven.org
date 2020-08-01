@@ -7,6 +7,8 @@ const { color } = styles;
 
 export const CheckList = styled.ul`
   padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 `;
 
 export const CheckListItemContainer = styled(Text).attrs({ as: 'li' })<
@@ -16,6 +18,10 @@ export const CheckListItemContainer = styled(Text).attrs({ as: 'li' })<
   list-style: none;
   position: relative;
   padding-left: 32px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
   svg {
     position: absolute;
