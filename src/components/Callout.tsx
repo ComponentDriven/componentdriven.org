@@ -11,8 +11,8 @@ export const Callout = styled(Text)<TextProps>`
   color: #586368;
   margin-top: 40px;
   margin-bottom: ${margin.large}px;
-  margin-left: -${spacing.padding.large}px;
-  margin-right: -${spacing.padding.large}px;
+  margin-left: -${spacing.padding.medium}px;
+  margin-right: -${spacing.padding.medium}px;
 
   @media (min-width: ${breakpoint}px) {
     margin-left: 0;

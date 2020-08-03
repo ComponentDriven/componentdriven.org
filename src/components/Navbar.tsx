@@ -1,10 +1,17 @@
 import styled from 'styled-components';
 import GitHubButton from 'react-github-button';
-import { styles, Link } from '@storybook/design-system';
+import {
+  styles,
+  Link,
+  Icon,
+  TooltipLinkList,
+  WithTooltip,
+} from '@storybook/design-system';
 import IconLearnStorybook from '../images/icon-learn-storybook.svg';
 import { Stack } from './Stack';
+import { margin } from '../styles';
 
-const { color, pageMargins, typography } = styles;
+const { color, typography, breakpoint } = styles;
 
 const Logo = styled(IconLearnStorybook)`
   && {
@@ -53,13 +60,21 @@ const NavLink = styled(Link)`
   }
 `;
 
-type link = { title; href };
+type link = { title: string; href: string };
 type NavGroupProps = {
   links: link[];
 };
 
+const Nav = styled.nav`
+  display: none;
+
+  @media (min-width: ${breakpoint}px) {
+    display: block;
+  }
+`;
+
 const NavGroup = ({ links }: NavGroupProps) => (
-  <nav>
+  <Nav>
     <Stack space={25} alignment="center">
       {links.map((link) => (
         <NavLink tertiary key={link.title} href={link.href}>
@@ -67,11 +82,16 @@ const NavGroup = ({ links }: NavGroupProps) => (
         </NavLink>
       ))}
     </Stack>
-  </nav>
+  </Nav>
 );
 
-const NavWrapper = styled.div`
-  ${pageMargins}
+const CollapsedNav = styled(WithTooltip).attrs({ tagName: 'nav' })`
+  display: inline;
+  margin-left: ${margin.xsmall}px;
+
+  @media (min-width: ${breakpoint}px) {
+    display: none;
+  }
 `;
 
 const NavItem = styled.div`
@@ -89,12 +109,25 @@ export const Navbar = ({ links, githubLink }: NavbarProps) => (
       <Logo />
     </NavItem>
     <NavGroup links={links} />
-    <NavItem data-chromatic="ignore">
-      <GitHubLink
-        type="stargazers"
-        namespace={githubLink.namespace}
-        repo={githubLink.repo}
-      />
-    </NavItem>
+    <Stack axis="horizontal" space="0">
+      <NavItem data-chromatic="ignore">
+        <GitHubLink
+          type="stargazers"
+          namespace={githubLink.namespace}
+          repo={githubLink.repo}
+        />
+      </NavItem>
+      <CollapsedNav
+        tagName="span"
+        placement="top"
+        trigger="click"
+        tooltip={<TooltipLinkList links={links} />}
+        closeOnClick
+      >
+        <Link tertiary inverse>
+          <Icon icon="menu" />
+        </Link>
+      </CollapsedNav>
+    </Stack>
   </Stack>
 );
