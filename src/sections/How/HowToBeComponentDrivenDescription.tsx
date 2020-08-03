@@ -8,7 +8,7 @@ const DescriptionListContainer = styled(Stack)<StackProps>`
   margin-top: ${margin.large}px;
 `;
 
-export const DescriptionList = () => (
+export const HowToBeComponentDrivenDescription = () => (
   <DescriptionListContainer axis="vertical" space="80px">
     <ExplainerCard
       illustration={<img src="/component.svg" />}
