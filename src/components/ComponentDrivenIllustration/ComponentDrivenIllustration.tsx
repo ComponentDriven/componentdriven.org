@@ -1,5 +1,4 @@
 import React from 'react';
-import { GradientFill } from './GradientFill';
 import { Glow } from './Glow';
 
 export const ComponentDrivenIllustration = (props) => (
@@ -25,11 +24,12 @@ export const ComponentDrivenIllustration = (props) => (
         ></path>
       </mask>
       <g mask="url(#components)">
-        <path
-          fill="url(#pattern0)"
-          d="M590 20H1045V611H590z"
-          transform="rotate(90 590 20)"
-        ></path>
+        <rect
+          width="590"
+          height="475"
+          fill="url(#gradient-fill)"
+          opacity="0.75"
+        />
       </g>
     </g>
     <g id="chrome">
@@ -63,17 +63,6 @@ export const ComponentDrivenIllustration = (props) => (
     </g>
     <Glow />
     <defs>
-      <pattern
-        id="pattern0"
-        width="1"
-        height="1"
-        patternContentUnits="objectBoundingBox"
-      >
-        <use
-          transform="matrix(.00216 0 0 .00166 0 -.075)"
-          xlinkHref="#gradient-fill-0"
-        ></use>
-      </pattern>
       <clipPath id="window-clip">
         <path
           fill="#fff"
@@ -81,7 +70,18 @@ export const ComponentDrivenIllustration = (props) => (
           transform="translate(1 21)"
         ></path>
       </clipPath>
-      <GradientFill id="gradient-fill-0" />
+      <linearGradient
+        id="gradient-fill"
+        x1="76"
+        x2="553.5"
+        y1="269"
+        y2="415"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#A24FBD"></stop>
+        <stop offset="0.477" stopColor="#367ED6"></stop>
+        <stop offset="0.982" stopColor="#E1264D"></stop>
+      </linearGradient>
     </defs>
   </svg>
 );

@@ -4,7 +4,7 @@ import { styles } from '@storybook/design-system';
 import { margin } from '../../styles';
 import { Heading, HeadingProps } from '../../components/Heading';
 import { Backdrop } from '../../components/Backdrop';
-import { DescriptionList } from './DescriptionList';
+import { HowToBeComponentDrivenDescription } from './HowToBeComponentDrivenDescription';
 
 const { pageMargins, color } = styles;
 
@@ -23,7 +23,7 @@ export const How = () => (
   <Backdrop>
     <HowContainer id="how">
       <HowTitle>How to be Component Driven</HowTitle>
-      <DescriptionList />
+      <HowToBeComponentDrivenDescription />
     </HowContainer>
   </Backdrop>
 );

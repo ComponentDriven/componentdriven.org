@@ -7,7 +7,7 @@ import { margin } from '../styles';
 import { Measure, MeasureProps } from './Measure';
 import ArrowSvg from '../images/arrow.svg';
 
-const { breakpoint } = styles;
+const { breakpoint, typography } = styles;
 
 const ComponentBadge = styled(Badge)`
   background-color: rgba(0, 0, 0, 0.2);
@@ -31,6 +31,10 @@ const DescriptionContainer = styled.div`
 
   dd {
     margin-left: 0;
+  }
+
+  dt {
+    font-weight: ${typography.weight.black};
   }
 `;
 
@@ -98,9 +102,7 @@ export const ExplainerCard = ({
       {!hideArrow && <Arrow />}
     </Illustration>
     <DescriptionContainer>
-      <Heading level="4" as="dt">
-        {term}
-      </Heading>
+      <Text as="dt">{term}</Text>
       <Text as="dd">{definition}</Text>
       <ComponentBadgeGroup>
         {examples.map((example) => (
