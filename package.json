@@ -18,6 +18,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-github-button": "^0.1.11",
+    "react-intersection-observer": "^8.26.2",
     "styled-components": "^4.4.1"
   },
   "devDependencies": {
