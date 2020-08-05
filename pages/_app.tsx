@@ -6,6 +6,16 @@ import { GlobalStyle } from '../src/styles';
 
 const { GlobalStyle: StorybookDSGlobalStyle, fontUrl } = global;
 
+const GA_TRACKING_ID = 'UA-90798419-11';
+
+const gaSnippet = `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '${GA_TRACKING_ID}');
+`;
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -25,6 +35,13 @@ function MyApp({ Component, pageProps }) {
         {/* @ts-ignore */}
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
         <link href={fontUrl} rel="stylesheet" />
+
+        {/* Global Site Tag (gtag.js) - Google Analytics */}
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        ></script>
+        <script dangerouslySetInnerHTML={{ __html: gaSnippet }} />
       </Head>
       <StorybookDSGlobalStyle />
       <GlobalStyle />
