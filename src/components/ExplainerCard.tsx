@@ -46,7 +46,7 @@ const Illustration = styled.div`
   max-width: 300px;
   position: relative;
 
-  margin-bottom: ${margin.small}px;
+  margin-bottom: 1.5rem;
 
   @media (min-width: ${breakpoint * 1.25}px) {
     margin-bottom: 0;
