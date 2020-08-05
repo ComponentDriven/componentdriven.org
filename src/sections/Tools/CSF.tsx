@@ -32,7 +32,7 @@ const CSFDescription = styled(CardBody)`
 export const CSF = () => (
   <Card>
     <CSFLogo>
-      <img src="/logos/logo-csf.svg" style={{}} />
+      <img src="/logos/logo-csf.svg" alt="" />
     </CSFLogo>
     <CSFDescription>
       <Stack axis="vertical" space="small">

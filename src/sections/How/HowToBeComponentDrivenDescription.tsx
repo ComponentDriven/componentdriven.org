@@ -62,7 +62,7 @@ export const HowToBeComponentDrivenDescription = () => {
   return (
     <DescriptionListContainer axis="vertical" space="80px">
       <ExplainerCard
-        illustration={<img src="/component.svg" />}
+        illustration={<img alt="" src="/component.svg" />}
         term="Build one component at a time"
         definition="Build each component in isolation and define its relevant states. Start small."
         examples={['Avatar', 'Button', 'Input', 'Tooltip']}
@@ -70,8 +70,9 @@ export const HowToBeComponentDrivenDescription = () => {
       <ExplainerCard
         illustration={
           <>
-            <img src="/composition.svg" />
+            <img alt="" src="/composition.svg" />
             <MotionImg
+              alt=""
               src="/composition-stack.svg"
               ref={compositionRef}
               animate={compositionControls}
@@ -85,8 +86,9 @@ export const HowToBeComponentDrivenDescription = () => {
       <ExplainerCard
         illustration={
           <>
-            <img src="/page.svg" />
+            <img alt="" src="/page.svg" />
             <MotionImg
+              alt=""
               src="/page-stack.svg"
               ref={pageRef}
               animate={pageControls}
@@ -100,8 +102,9 @@ export const HowToBeComponentDrivenDescription = () => {
       <ExplainerCard
         illustration={
           <>
-            <img src="/integrate.svg" />
+            <img alt="" src="/integrate.svg" />
             <MotionImg
+              alt=""
               src="/integrate-stack.svg"
               ref={integrateRef}
               animate={integrateControls}

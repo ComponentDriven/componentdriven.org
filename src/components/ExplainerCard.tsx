@@ -29,11 +29,7 @@ const DescriptionContainer = styled.div`
     color: #fff;
   }
 
-  dd {
-    margin-left: 0;
-  }
-
-  dt {
+  h3 {
     font-weight: ${typography.weight.black};
   }
 `;
@@ -102,8 +98,10 @@ export const ExplainerCard = ({
       {!hideArrow && <Arrow />}
     </Illustration>
     <DescriptionContainer>
-      <Text as="dt">{term}</Text>
-      <Text as="dd">{definition}</Text>
+      <Heading as="h3" level="4">
+        {term}
+      </Heading>
+      <Text>{definition}</Text>
       <ComponentBadgeGroup>
         {examples.map((example) => (
           <ComponentBadge key={example}>{example}</ComponentBadge>
