@@ -102,8 +102,8 @@ export const ExplainerCard = ({
       {!hideArrow && <Arrow />}
     </Illustration>
     <DescriptionContainer>
-      <Text as="dt">{term}</Text>
-      <Text as="dd">{definition}</Text>
+      <Text>{term}</Text>
+      <Text>{definition}</Text>
       <ComponentBadgeGroup>
         {examples.map((example) => (
           <ComponentBadge key={example}>{example}</ComponentBadge>

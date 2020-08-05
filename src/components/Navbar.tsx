@@ -85,7 +85,9 @@ const NavGroup = ({ links }: NavGroupProps) => (
   </Nav>
 );
 
-const CollapsedNav = styled(WithTooltip).attrs({ tagName: 'nav' })`
+const CollapsedNav = styled(WithTooltip).attrs({
+  'aria-label': 'Open the main nav',
+})`
   display: inline;
   margin-left: ${margin.xsmall}px;
 
