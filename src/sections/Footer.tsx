@@ -6,8 +6,12 @@ import { margin } from '../styles';
 
 const FooterContainer = styled(Text).attrs({ as: 'footer' })`
   color: #586368;
-  margin-bottom: ${margin.medium}px;
+  margin-bottom: 3rem;
   text-align: center;
+
+  @media (min-width: ${styles.breakpoint}px) {
+    margin-bottom: ${margin.medium}px;
+  }
 `;
 
 const FooterLink = styled(Link).attrs({ tertiary: true })`
