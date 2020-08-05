@@ -35,7 +35,7 @@ export const CSF = () => (
       <img src="/logos/logo-csf.svg" alt="" />
     </CSFLogo>
     <CSFDescription>
-      <Stack axis="vertical" space="small">
+      <Stack axis="vertical" space={24}>
         <Text>
           The{' '}
           <Link href="https://github.com/ComponentDriven/csf">
