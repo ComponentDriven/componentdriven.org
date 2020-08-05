@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <SEO
         title="Component Driven User Interfaces"
-        description="The development and design practice of building user interfaces with modular components. UIs are built from the “bottom up” starting with basic components then progressively combined to assemble screens."
+        description="How modularity is transforming design and frontend development"
         url="https://componentdriven.org/"
         image="https://componentdriven.org/og-component-driven.jpg"
       />
