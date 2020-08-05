@@ -11,7 +11,7 @@ export const Glow = () => {
     const timeoutId = setTimeout(() => {
       const nextFill = fill < 2 ? fill + 1 : 0;
       setFill(nextFill);
-    }, 2000);
+    }, 1500);
 
     return () => clearTimeout(timeoutId);
   }, [fill]);
