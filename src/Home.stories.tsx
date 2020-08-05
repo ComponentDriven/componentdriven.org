@@ -21,5 +21,6 @@ Mobile.story = {
     viewport: {
       defaultViewport: 'iphonex',
     },
+    chromatic: { viewports: [375, 812] },
   },
 };
