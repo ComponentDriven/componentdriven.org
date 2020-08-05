@@ -20,6 +20,7 @@ export const Heading = styled.h1<HeadingProps>`
 
       @media (min-width: ${breakpoint}px) {
         font-size: ${typography.size.l3}px;
+        line-height: 64px;
         letter-spacing: -0.61px;
       }
     `};
