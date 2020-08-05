@@ -44,7 +44,7 @@ export const LogoGrid = ({ items }: LogoGridProps) => (
         key={item.title}
         href={item.link}
         target="_blank"
-        rel="noopener"
+        rel="noopener nofollow"
         title={item.title}
         image={item.image}
       ></LogoItem>
