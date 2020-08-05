@@ -1,3 +1,5 @@
+![](https://raw.githubusercontent.com/ComponentDriven/componentdriven.org/master/public/favicon.svg)
+
 # Component Driven
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1d7bee5d-9fc5-4583-9bc6-383166fa8c3f/deploy-status)](https://app.netlify.com/sites/lucid-clarke-d8746f/deploys)
