@@ -4,5 +4,6 @@ module.exports = {
     '@next/plugin-storybook/preset',
     '@storybook/addon-actions',
     '@storybook/addon-links',
+    '@storybook/addon-viewport/register',
   ],
 };
