@@ -13,11 +13,16 @@ const { typography, color, breakpoint, pageMargins } = styles;
 const HeaderTitle = styled(Heading).attrs({ level: '1' })`
   color: ${color.lightest};
   text-align: center;
+  margin-bottom: 8px;
+
+  @media (min-width: ${breakpoint}px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const HeaderCopy = styled.p`
   font-size: ${typography.size.s3}px;
-  line-height: 1.5;
+  line-height: ${typography.size.m3}px;
   max-width: ${measure.regular}px;
   color: ${color.lightest};
   margin: 0 auto;
@@ -34,12 +39,12 @@ const HeaderContainer = styled(Stack).attrs({
   space: 'medium',
 })<StackProps>`
   ${pageMargins}
-  padding-bottom: 64px;
   padding-top: 32px;
+  padding-bottom: 3rem;
 
   @media (min-width: ${breakpoint}px) {
-    padding-bottom: 128px;
     padding-top: 48px;
+    padding-bottom: 128px;
   }
 `;
 
@@ -67,14 +72,14 @@ export const Header = () => (
         }}
       />
       <HeaderIllustration />
-      <Stack axis="vertical" space="xsmall">
+      <div>
         <HeaderTitle as="h1">Component Driven User Interfaces</HeaderTitle>
         <HeaderCopy>
           The development and design practice of building user interfaces with
           modular components. UIs are built from the “bottom up” starting with
           basic components then progressively combined to assemble screens.
         </HeaderCopy>
-      </Stack>
+      </div>
     </HeaderContainer>
   </Backdrop>
 );

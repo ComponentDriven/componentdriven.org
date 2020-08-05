@@ -7,26 +7,16 @@ import {
   TooltipLinkList,
   WithTooltip,
 } from '@storybook/design-system';
-import IconLearnStorybook from '../images/icon-learn-storybook.svg';
 import { Stack } from './Stack';
 import { margin } from '../styles';
 
 const { color, typography, breakpoint } = styles;
 
-const Logo = styled(IconLearnStorybook)`
-  && {
-    height: 32px;
-    width: auto;
-    display: block;
-    transition: transform 150ms ease-out;
-    transform: translate3d(0, 0, 0);
+const LogoLink = styled(Link)`
+  display: block;
 
-    &:hover {
-      transform: translate3d(0, -1px, 0);
-    }
-    &:active {
-      transform: translate3d(0, 0, 0);
-    }
+  img {
+    display: block;
   }
 `;
 
@@ -108,7 +98,9 @@ export type NavbarProps = {
 export const Navbar = ({ links, githubLink }: NavbarProps) => (
   <Stack space="evenly" alignment="center">
     <NavItem>
-      <Logo />
+      <LogoLink href="/">
+        <img src="/logo-componentdriven.svg" alt="Component Driven" />
+      </LogoLink>
     </NavItem>
     <NavGroup links={links} />
     <Stack axis="horizontal" space="0">

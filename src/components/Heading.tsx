@@ -13,13 +13,14 @@ export const Heading = styled.h1<HeadingProps>`
   ${(props) =>
     props.level === '1' &&
     css`
-      font-size: ${typography.size.l1}px;
-      line-height: 1.25;
+      font-size: ${typography.size.m3}px;
+      line-height: ${typography.size.l1}px;
       letter-spacing: -0.61px;
       font-weight: ${typography.weight.black};
 
       @media (min-width: ${breakpoint}px) {
         font-size: ${typography.size.l3}px;
+        line-height: 64px;
         letter-spacing: -0.61px;
       }
     `};
@@ -27,10 +28,15 @@ export const Heading = styled.h1<HeadingProps>`
   ${(props) =>
     props.level === '2' &&
     css`
-      font-size: ${typography.size.l1}px;
-      line-height: ${typography.size.l1}px;
+      font-size: ${typography.size.m2}px;
+      line-height: ${typography.size.m3}px;
       letter-spacing: -0.44px;
       font-weight: ${typography.weight.black};
+
+      @media (min-width: ${breakpoint}px) {
+        font-size: ${typography.size.l1}px;
+        line-height: ${typography.size.l1}px;
+      }
     `};
 
   ${(props) =>

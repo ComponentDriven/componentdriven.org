@@ -1,8 +1,16 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Glow } from './Glow';
 
+const SVG = styled.svg`
+  box-shadow: rgba(0, 0, 0, 0.016) 0px 3.3px 2.2px,
+    rgba(0, 0, 0, 0.02) 0px 8px 5.3px, rgba(0, 0, 0, 0.024) 0px 15px 10px,
+    rgba(0, 0, 0, 0.03) 0px 26.8px 17.9px,
+    rgba(0, 0, 0, 0.035) 0px 50.1px 33.4px, rgba(0, 0, 0, 0.05) 0px 120px 80px;
+`;
+
 export const ComponentDrivenIllustration = (props) => (
-  <svg
+  <SVG
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 590 475"
@@ -83,5 +91,5 @@ export const ComponentDrivenIllustration = (props) => (
         <stop offset="0.982" stopColor="#E1264D"></stop>
       </linearGradient>
     </defs>
-  </svg>
+  </SVG>
 );

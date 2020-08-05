@@ -1,18 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import { styles } from '@storybook/design-system';
-import { Stack } from '../../components/Stack';
-import { margin } from '../../styles';
+import { sectionPadding } from '../../styles';
 import { WhyComponents } from './WhyComponents';
 import { History } from './History';
 import { WhatAreComponents } from './WhatAreComponents';
 
-const { pageMargins } = styles;
+const { pageMargins, breakpoint } = styles;
 
 const WhyContainer = styled.section`
   ${pageMargins}
-  padding-bottom: ${margin.large}px;
-  padding-top: ${margin.large}px;
+  ${sectionPadding}
 `;
 
 export const Why = () => (

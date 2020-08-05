@@ -6,7 +6,7 @@ import { margin } from '../styles';
 
 const FooterContainer = styled(Text).attrs({ as: 'footer' })`
   color: #586368;
-  margin-bottom: ${margin.medium}px;
+  padding-bottom: 3rem;
   text-align: center;
 `;
 

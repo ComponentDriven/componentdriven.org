@@ -26,6 +26,7 @@
     "@next/plugin-storybook": "^9.5.0",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-links": "^5.3.19",
+    "@storybook/addon-viewport": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/react": "^5.3.19",
     "@types/node": "^14.0.26",

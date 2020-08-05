@@ -1,13 +1,32 @@
 import React, { useLayoutEffect } from 'react';
 import styled from 'styled-components';
+import { styles } from '@storybook/design-system';
 import { motion, useAnimation, AnimationControls } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ExplainerCard } from '../../components/ExplainerCard';
 import { margin } from '../../styles';
 import { Stack, StackProps } from '../../components/Stack';
 
-const DescriptionListContainer = styled(Stack)<StackProps>`
-  margin-top: ${margin.large}px;
+const { breakpoint } = styles;
+
+const DescriptionListContainer = styled.div`
+  margin-top: 1.5rem;
+
+  > * {
+    margin-bottom: 3rem;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: ${breakpoint}px) {
+    margin-top: ${margin.large}px;
+
+    > * {
+      margin-bottom: 80px;
+    }
+  }
 `;
 
 const MotionImg = styled(motion.img).attrs({
@@ -60,7 +79,7 @@ export const HowToBeComponentDrivenDescription = () => {
   const [integrateRef, integrateControls] = useAnimateInView();
 
   return (
-    <DescriptionListContainer axis="vertical" space="80px">
+    <DescriptionListContainer>
       <ExplainerCard
         illustration={<img alt="" src="/component.svg" />}
         term="Build one component at a time"

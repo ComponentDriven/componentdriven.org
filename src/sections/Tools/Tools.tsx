@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { styles } from '@storybook/design-system';
 import { Stack } from '../../components/Stack';
-import { margin } from '../../styles';
+import { sectionPadding } from '../../styles';
 import { Heading, HeadingProps } from '../../components/Heading';
 import { SubHeading } from '../../components/SubHeading';
 import { LogoGrid } from '../../components/LogoGrid';
@@ -15,8 +15,7 @@ const { pageMargins } = styles;
 
 const ToolsContainer = styled.div`
   ${pageMargins}
-  padding-top: ${margin.large}px;
-  padding-bottom: ${margin.large}px;
+  ${sectionPadding}
 `;
 
 const ToolsSectionTitle = styled(Heading).attrs({
