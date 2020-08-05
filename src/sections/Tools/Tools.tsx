@@ -11,7 +11,7 @@ import { Measure } from '../../components/Measure';
 import { designTools } from '../../design-tools';
 import { CSF } from './CSF';
 
-const { pageMargins, breakpoint } = styles;
+const { pageMargins } = styles;
 
 const ToolsContainer = styled.div`
   ${pageMargins}

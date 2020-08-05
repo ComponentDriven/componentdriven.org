@@ -27,10 +27,15 @@ export const Heading = styled.h1<HeadingProps>`
   ${(props) =>
     props.level === '2' &&
     css`
-      font-size: ${typography.size.l1}px;
-      line-height: ${typography.size.l1}px;
+      font-size: ${typography.size.m2}px;
+      line-height: ${typography.size.m3}px;
       letter-spacing: -0.44px;
       font-weight: ${typography.weight.black};
+
+      @media (min-width: ${breakpoint}px) {
+        font-size: ${typography.size.l1}px;
+        line-height: ${typography.size.l1}px;
+      }
     `};
 
   ${(props) =>
