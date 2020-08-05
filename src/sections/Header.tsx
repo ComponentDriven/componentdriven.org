@@ -34,12 +34,12 @@ const HeaderContainer = styled(Stack).attrs({
   space: 'medium',
 })<StackProps>`
   ${pageMargins}
-  padding-bottom: 64px;
   padding-top: 32px;
+  padding-bottom: 3rem;
 
   @media (min-width: ${breakpoint}px) {
-    padding-bottom: 128px;
     padding-top: 48px;
+    padding-bottom: 128px;
   }
 `;
 

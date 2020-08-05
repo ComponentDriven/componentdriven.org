@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 import { styles } from '@storybook/design-system';
-import { margin } from '../../styles';
+import { sectionPadding } from '../../styles';
 import { Heading, HeadingProps } from '../../components/Heading';
 import { Backdrop } from '../../components/Backdrop';
 import { HowToBeComponentDrivenDescription } from './HowToBeComponentDrivenDescription';
 
-const { pageMargins, color } = styles;
+const { pageMargins, color, breakpoint } = styles;
 
 const HowContainer = styled.section`
   ${pageMargins}
-  padding-bottom: ${margin.large}px;
-  padding-top: ${margin.large}px;
+
+  ${sectionPadding}
 `;
 
 const HowTitle = styled(Heading).attrs({ level: '2', as: 'h2' })<HeadingProps>`
