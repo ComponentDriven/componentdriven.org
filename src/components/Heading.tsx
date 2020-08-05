@@ -13,8 +13,8 @@ export const Heading = styled.h1<HeadingProps>`
   ${(props) =>
     props.level === '1' &&
     css`
-      font-size: ${typography.size.l1}px;
-      line-height: 1.25;
+      font-size: ${typography.size.m3}px;
+      line-height: ${typography.size.l1}px;
       letter-spacing: -0.61px;
       font-weight: ${typography.weight.black};
 
