@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Badge, styles } from '@storybook/design-system';
 import { Heading } from './Heading';
+import { Stack, StackProps } from './Stack';
 import { Text } from './Text';
 import { margin } from '../styles';
 import { Measure, MeasureProps } from './Measure';
@@ -14,7 +15,10 @@ const ComponentBadge = styled(Badge)`
   color: rgba(255, 255, 255, 0.75);
 `;
 
-const ComponentBadgeGroup = styled.div`
+const ComponentBadgeGroup = styled(Stack).attrs({
+  axis: 'horizontal',
+  space: 10,
+})<StackProps>`
   margin-top: 12px;
 `;
 
