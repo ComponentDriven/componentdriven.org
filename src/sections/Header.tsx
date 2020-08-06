@@ -54,6 +54,7 @@ const HeaderIllustration = styled(ComponentDrivenIllustration)`
   display: block;
   width: 100%;
   max-width: ${measure.regular}px;
+  position: relative;
 `;
 
 export const Header = () => (
