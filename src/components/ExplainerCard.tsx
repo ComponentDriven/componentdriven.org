@@ -61,7 +61,7 @@ const Illustration = styled.div`
 const ExplainerCardContainer = styled(Measure)<MeasureProps>`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
 
   @media (min-width: ${breakpoint * 1.25}px) {
