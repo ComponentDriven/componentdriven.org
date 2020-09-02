@@ -1,4 +1,9 @@
-
+/**
+ * NOTE for contributors:
+ * This is a curated list. Here's what qualifies:
+ * - It should be the company’s main tool (one tool per company)
+ * - Must be production-ready and have users (no alpha/beta products)
+ */
 export const designTools = [{
   image: '/logos/logo-sketch.svg',
   link: 'https://www.sketch.com',
@@ -56,3 +61,9 @@ export const designTools = [{
   link: 'https://relate.app',
   title: 'Relate',
 }]
+/**
+ * NOTE for contributors:
+ * This is a curated list. Here's what qualifies:
+ * - It should be the company’s main tool (one tool per company)
+ * - Must be production-ready and have users (no alpha/beta products)
+ */
