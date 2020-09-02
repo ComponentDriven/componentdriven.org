@@ -51,4 +51,8 @@ export const designTools = [{
   image: '/logos/logo-interplay.svg',
   link: 'https://interplayapp.com',
   title: 'Interplay',
+}, {
+  image: '/logos/logo-relate.svg',
+  link: 'https://relate.app',
+  title: 'Relate',
 }]
