@@ -1,3 +1,9 @@
+/**
+ * NOTE for contributors:
+ * This is a curated list. Here's what qualifies:
+ * - It should be the company’s main tool (one tool per company)
+ * - Must be production-ready and have users (no alpha/beta products)
+ */
 export const developmentTools = [{
   image: '/logos/logo-react.svg',
   link: 'https://reactjs.org',
@@ -59,3 +65,9 @@ export const developmentTools = [{
   link: "https://components.studio",
   title: "Components.studio",
 }]
+/**
+ * NOTE for contributors:
+ * This is a curated list. Here's what qualifies:
+ * - It should be the company’s main tool (one tool per company)
+ * - Must be production-ready and have users (no alpha/beta products)
+ */
