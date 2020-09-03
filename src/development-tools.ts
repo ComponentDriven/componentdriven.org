@@ -60,6 +60,10 @@ export const developmentTools = [{
   image: '/logos/logo-bit.svg',
   link: 'https://bit.dev',
   title: 'Bit',
+}, {
+  image: "/logos/logo-components-studio.svg",
+  link: "https://components.studio",
+  title: "Components.studio",
 }]
 /**
  * NOTE for contributors:
