@@ -58,8 +58,4 @@ export const developmentTools = [{
   image: "/logos/logo-components-studio.svg",
   link: "https://components.studio",
   title: "Components.studio",
-}, {
-  image: "/logos/logo-webcomponents-dev.svg",
-  link: "https://webcomponents.dev",
-  title: "WebComponents.dev",
 }]
