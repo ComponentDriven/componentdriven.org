@@ -25,6 +25,10 @@ export const developmentTools = [{
   link: 'https://svelte.dev',
   title: 'Svelte',
 }, {
+  image: "/logos/logo-riot.svg",
+  link: "https://riot.js.org",
+  title: "Riot.js",
+}, {
   image: '/logos/logo-storybook.svg',
   link: 'https://storybook.js.org',
   title: 'Storybook',
@@ -64,10 +68,6 @@ export const developmentTools = [{
   image: "/logos/logo-components-studio.svg",
   link: "https://components.studio",
   title: "Components.studio",
-}, {
-  image: "/logos/logo-riot.svg",
-  link: "https://riot.js.org",
-  title: "Riot.js",
 }]
 /**
  * NOTE for contributors:
