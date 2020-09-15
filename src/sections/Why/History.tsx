@@ -16,10 +16,11 @@ export const History = () => (
       <Link href="https://blog.hichroma.com/component-driven-development-ce1109d56c8e">
         2017
       </Link>{' '}
-      to describe the shift in UI development toward component architectures.
-      The idea of modular software has many parallels in movements such as
-      microservices and containerization. Historical precedents also include
-      lean manufacturing and mass manufacturing circa early 20th century.
+      to describe the shift in UI development toward component architectures and
+      processes. The idea of modular UI has many parallels in software movements
+      such as microservices and containerization. Historical precedents also
+      include lean manufacturing and mass manufacturing circa early 20th
+      century.
     </Callout>
   </Measure>
 );

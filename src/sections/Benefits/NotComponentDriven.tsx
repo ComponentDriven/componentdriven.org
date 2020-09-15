@@ -10,12 +10,15 @@ export const NotComponentDriven = () => (
     </Heading>
     <CheckList>
       <CheckListItem type="cross">
-        <b>Website builders:</b> UIs built with drag and drop tools like
-        Squarespace, Wix, Weebly, or Wordpress.
+        <b>Page-based:</b> Development and design processes that treats a
+        website as a collection of pages. Not much effort is made to reuse
+        common elements across pages.
       </CheckListItem>
       <CheckListItem type="cross">
-        <b>Monoliths:</b> UIs powered by classic frameworks like Rails, Django,
-        PHP where the appearance isn’t separated from the business logic.
+        <b>Tools designed for pages:</b> Tools that focus on displaying
+        documents like Wordpress and Drupal. Backend frameworks such as Rails,
+        Django and PHP that treat UI reuse as an afterthought and discourage
+        widespread component reuse.
       </CheckListItem>
     </CheckList>
   </Measure>
