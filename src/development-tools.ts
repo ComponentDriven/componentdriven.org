@@ -81,9 +81,9 @@ export const developmentTools = [
     title: 'Bit',
   },
   {
-    image: '/logos/logo-components-studio.svg',
-    link: 'https://components.studio',
-    title: 'Components.studio',
+    image: '/logos/logo-backlight.svg',
+    link: 'https://backlight.dev',
+    title: 'Backlight',
   },
   {
     image: '/logos/logo-stencil.svg',
