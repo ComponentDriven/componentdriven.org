@@ -60,6 +60,10 @@ export const designTools = [{
   image: '/logos/logo-relate.svg',
   link: 'https://relate.app',
   title: 'Relate',
+}, {
+    image: '/logos/logo-penpot.svg',
+    link: 'https://penpot.app',
+    title: 'Penpot',
 }]
 /**
  * NOTE for contributors:
