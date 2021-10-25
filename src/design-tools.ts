@@ -3,6 +3,7 @@
  * This is a curated list. Here's what qualifies:
  * - It should be the company’s main tool (one tool per company)
  * - Must be production-ready and have users (no alpha/beta products)
+ * - Constrain the logo to 32px height and use a 180x180 canvas
  */
 export const designTools = [{
   image: '/logos/logo-sketch.svg',
