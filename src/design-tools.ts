@@ -42,10 +42,6 @@ export const designTools = [{
   link: 'https://zeroheight.com',
   title: 'Zero Height',
 }, {
-  image: '/logos/logo-alva.svg',
-  link: 'https://meetalva.io',
-  title: 'Alva',
-}, {
   image: '/logos/logo-modulz.svg',
   link: 'https://www.modulz.app',
   title: 'Modulz',
