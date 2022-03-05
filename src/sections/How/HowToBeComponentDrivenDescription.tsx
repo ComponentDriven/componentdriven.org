@@ -100,7 +100,7 @@ export const HowToBeComponentDrivenDescription = () => {
         }
         term="Combine components"
         definition="Compose small components together to unlock new features while gradually increasing complexity."
-        examples={['Forms', 'Header', 'List', 'Table']}
+        examples={['Form', 'Header', 'List', 'Table']}
       />
       <ExplainerCard
         illustration={
