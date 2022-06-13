@@ -90,6 +90,11 @@ export const developmentTools = [
     link: 'https://stenciljs.com/',
     title: 'Stencil.js',
   },
+  {
+    image: '/logos/logo-anima.svg',
+    link: 'https://www.animaapp.com/',
+    title: 'Anima',
+  },
 ];
 /**
  * NOTE for contributors:
