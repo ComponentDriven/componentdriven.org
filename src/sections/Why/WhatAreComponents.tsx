@@ -49,7 +49,7 @@ export const WhatAreComponents = () => (
       <Text>
         Components are standardized, interchangeable building blocks of UIs.
         They encapsulate the appearance and function of UI pieces. Think LEGO
-        bricks. LEGOs can be used to build everything from castles to
+        bricks. LEGO can be used to build everything from castles to
         spaceships; components can be taken apart and used to create new
         features.
       </Text>
